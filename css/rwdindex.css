@@ -1,0 +1,438 @@
+@media screen and (max-width: 1220px) {
+    .row {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+    /* ===========================header================================= */
+
+    #header {
+        /* border: 2px solid #f00; */
+        border-bottom: 1px solid #f2f2f2;
+        background: #fff;
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+    }
+
+    #header .row {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #header h1 {
+        /* float: left; */
+        padding: 10px 0 10px 50px;
+    }
+
+    #header .menuopen {
+        display: block;
+        font-size: 20px;
+        /* float: right; */
+        /* height: 91.1px;
+        line-height: 91.1px; */
+        margin-right: 50px;
+    }
+
+    #header #nav {
+        /* float: right; */
+        width: 100%;
+        display: block;
+    }
+
+    #header #nav .depth1 {
+        display: block;
+    }
+
+    #header #nav .depth1>li {
+        display: block;
+        float: none;
+        font-size: 14px;
+        color: #333;
+        position: relative;
+    }
+
+    #header #nav .depth1>li>a {
+        display: block;
+        height: auto;
+        line-height: 50px;
+        padding-left: 30px;
+        font-weight: 900;
+        border-top: 1px solid rgba(132, 132, 132, 0.15);
+        padding-left: 50px;
+    }
+
+    #header #nav .depth1>li>a::after {
+        display: block;
+        position: absolute;
+        top: 2px;
+        right: 50px;
+        font-family: "FontAwesome";
+        font-size: 10px;
+        content: "\f107";
+        opacity: 0.3;
+    }
+
+    #header #nav .depth1>li:hover>a {
+        background: #000;
+        color: #fff;
+    }
+
+    #header #nav .depth2 {
+        position: static;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        color: #333;
+        font-size: 14px;
+        font-family: "Noto Sans KR", sans-serif;
+        display: block;
+    }
+
+    #header #nav .depth1>li:hover .depth2 {
+        display: none;
+    }
+
+    #header #nav .depth2 a {
+        display: block;
+        padding: 0 50px;
+        transition: all 0.3s;
+        border-bottom: 0px solid rgba(132, 132, 132, 0.15);
+        border-top: 1px solid rgba(132, 132, 132, 0.15);
+        height: auto;
+        line-height: 40px;
+    }
+
+    #header #nav .depth2>li>a:hover {
+        background-color: #000;
+        color: #fff;
+
+    }
+
+    /*===================슬라이드======================*/
+    #section .slideOuter .slide {
+        position: relative;
+        height: 40vw;
+    }
+
+    /*===================슬라이드 도트버튼======================*/
+
+    /*===================자동재생 멈춤버튼======================*/
+    #section .slideOuter .plapau {
+        font-size: 15px;
+        position: absolute;
+        left: 50%;
+        bottom: 15px;
+        margin-left: 50px;
+        color: #fff;
+        display: none;
+    }
+
+    /*===================슬라이드 텍스트=========================*/
+
+    #section .slide .text h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    #section .slide .text span {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 2em;
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    /*===================ourcompany=========================*/
+
+    #section .ourcompany .slogun {
+        margin: 20px 0 50px;
+        padding: 10px;
+    }
+
+    #section .ourcompany ul {
+        /* overflow: hidden; */
+        display: block;
+    }
+
+    #section .ourcompany ul .photo {
+        /* float: left;
+        width: 33.33%; */
+        flex: 1;
+        padding: 10px;
+    }
+
+    #section .ourcompany .slogun h2 {
+        font-weight: normal;
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    #section .ourcompany .slogun span {
+        display: block;
+        font-size: 13px;
+        line-height: 2em;
+    }
+
+    #section .ourcompany ul li.photo h3 {
+        font-size: 16px;
+        padding: 20px 30px;
+        font-weight: 500;
+    }
+
+    #section .ourcompany ul li.photo span {
+        display: inline;
+        font-size: 12px;
+        line-height: 2em;
+    }
+
+    #section .ourcompany ul li.photo a {
+        display: inline-block;
+        font-size: 12px;
+        padding: 20px 0 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /*===================creative=========================*/
+
+    #section .creative {
+        /* overflow: hidden; */
+        padding: 100px 0;
+        background: #fafafa;
+        display: block;
+    }
+
+    #section .creative .videoBox {
+        /* float: left;
+        width: 50%; */
+        /* flex: 1 1 50%; */
+    }
+
+    #section .creative .text {
+        /* float: left;
+    width: 50%; */
+        /* flex: 1 1 50%; */
+        padding: 50px 100px;
+    }
+
+    #section .creative .text h2 {
+        font-size: 28px;
+        line-height: 1.2em;
+        padding-top: 10px;
+    }
+
+    #section .creative .text p strong {
+        display: block;
+        font-size: 16px;
+        margin: 40px 0;
+    }
+
+    #section .creative .text p {
+        font-size: 12px;
+        /*단어잘림 허용안함*/
+        word-break: keep-all;
+        line-height: 1.5em;
+        padding-right: 100px;
+    }
+
+    #section .creative .text a {
+        display: block;
+        margin-top: 50px;
+        font-size: 12px;
+    }
+
+    /*===================business=========================*/
+
+    #section .business {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    #section .business .row {
+        padding: 10px 0px 0 10px;
+    }
+
+    #section .business ul {
+        /* overflow: hidden; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #section .business ul li {
+        flex: 1 1 50%;
+        /* float: left; */
+        /* width: 50%; */
+        padding: 10px 10px 0 0px;
+    }
+
+    #section .business h2 {
+        font-size: 28px;
+    }
+
+    #section .business p.text {
+        font-size: 13px;
+        line-height: 2em;
+        margin: 20px 0 50px;
+    }
+
+    /* ==========================best================================== */
+
+    #section .best {
+        background: url(../image/banner04.jpg) right center / cover;
+        height: 580px;
+        width: 100%;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    #section .best h2 {
+        font-size: 28px;
+    }
+
+    #section .best p {
+        font-size: 13px;
+        line-height: 2em;
+        padding-top: 20px;
+    }
+
+
+    /*===================contact=========================*/
+
+    #section .contact {
+        margin: -200px 0 40px 0;
+    }
+
+    #section .contact .row {
+        /* overflow: hidden; */
+        display: block;
+    }
+
+    #section .contact .map {
+        /* float: left;
+        width: 100%; */
+    }
+
+    #section .contact .query {
+        /* float: left;
+        width: 100%; */
+        background-color: #fff;
+        height: auto;
+        padding: 60px 0;
+        text-align: left;
+    }
+
+    #section .contact .query h3 {
+        font-size: 17px;
+    }
+
+    #section .contact .query .greeting {
+        font-size: 14px;
+        margin: 30px 0;
+    }
+
+    #section .contact .query .address span {
+        display: block;
+        font-size: 12.5px;
+        line-height: 2em;
+    }
+
+    #section .contact .query .btn {
+        margin: 80px 0 0 -10px;
+        padding: 10px;
+    }
+
+    #section .contact .query .btn a {
+        font-size: 14px;
+        padding: 10px 30px;
+        background: #000;
+        color: #fff;
+        margin: 0 5px;
+    }
+
+    /*===================footer=========================*/
+
+    #footer .row {
+        /* overflow: hidden; */
+        display: flex;
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+    }
+
+    #footer .btmlogo {
+        /* float: left; */
+        padding: 10px;
+        /* width: 100%; */
+        flex: 1 1 100%;
+        margin-left: 0px;
+    }
+
+    #footer .companyinfo {
+        flex: 1 1 100%;
+        /* float: right;
+        width: 100%; */
+
+        color: #555;
+        font-weight: 600;
+        padding: 10px;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    #footer .companyinfo .btmmenu {
+        text-align: left;
+    }
+
+    #footer .companyinfo .btmmenu>a {
+        font-size: 13px;
+        padding: 13px 15.5px 13px 0;
+    }
+
+    #footer .row .companyinfo .companyAddr {
+        margin-top: 20px;
+        line-height: 20px;
+        /* overflow: hidden; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #footer .companyAddr .addr {
+        flex: 1 1 100%;
+        /* float: none; */
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #footer .companyAddr .sns {
+        flex: 1 1 100%;
+        float: none;
+        font-size: 13px;
+        margin: 20px 0 50px;
+    }
+
+    #footer .companyAddr .sns i {
+        /* float: none; */
+        font-size: 13px;
+        opacity: 0.5;
+        margin-left: 20px;
+    }
+
+    #footer span {
+        display: block;
+    }
+
+    #footer span.slash {
+        display: none;
+    }
+
+}
