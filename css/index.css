@@ -309,6 +309,7 @@ img {
     display: block;
     font-size: 14px;
     line-height: 2em;
+    word-break: keep-all;
 }
 
 #section .ourcompany ul li.photo a {
@@ -391,6 +392,7 @@ img {
     font-size: 15px;
     line-height: 2em;
     margin: 20px 0 80px;
+    word-break: keep-all;
 }
 
 #section .business ul {
